@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXTextField?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.paint.LinearGradient?>
+<?import javafx.scene.paint.Stop?>
+<?import javafx.scene.shape.Circle?>
+<?import javafx.scene.shape.Line?>
+<?import javafx.scene.shape.Rectangle?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane fx:id="loginWindow" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="560.0" prefWidth="330.0" styleClass="pane01" stylesheets="@../css/login.css" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="resources.controller.LoginFormController">
+   <children>
+      <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#1f93ff00" height="129.0" layoutX="210.0" layoutY="363.0" opacity="0.23" stroke="#ecf0f1" strokeType="INSIDE" strokeWidth="3.0" width="108.0" />
+      <Line endX="22.5" layoutX="219.0" layoutY="403.0" opacity="0.23" startX="-10.5" stroke="#ecf0f1" />
+      <Line endX="41.0" layoutX="219.0" layoutY="413.0" opacity="0.23" startX="-10.5" stroke="#ecf0f1" />
+      <Line endX="41.0" layoutX="219.0" layoutY="422.0" opacity="0.23" startX="-10.5" stroke="#ecf0f1" />
+      <Line endX="41.0" layoutX="272.0" layoutY="459.0" opacity="0.23" startX="-10.5" stroke="#ecf0f1" />
+      <Line endX="41.0" layoutX="271.0" layoutY="469.0" opacity="0.23" startX="7.0" stroke="#ecf0f1" />
+      <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#1f93ff00" height="129.0" layoutX="220.0" layoutY="373.0" opacity="0.23" stroke="#ecf0f1" strokeType="INSIDE" strokeWidth="3.0" width="108.0" />
+      <Line endX="22.5" layoutX="229.0" layoutY="413.0" opacity="0.23" startX="-10.5" stroke="#ecf0f1" />
+      <Line endX="41.0" layoutX="229.0" layoutY="423.0" opacity="0.23" startX="-10.5" stroke="#ecf0f1" />
+      <Line endX="41.0" layoutX="229.0" layoutY="432.0" opacity="0.23" startX="-10.5" stroke="#ecf0f1" />
+      <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#1f93ff00" height="129.0" layoutX="11.0" layoutY="87.0" opacity="0.23" stroke="#ecf0f1" strokeType="INSIDE" strokeWidth="3.0" width="108.0" />
+      <Line endX="22.5" layoutX="229.0" layoutY="413.0" opacity="0.23" startX="-10.5" stroke="#ecf0f1" />
+      <Line endX="41.0" layoutX="229.0" layoutY="423.0" opacity="0.23" startX="-10.5" stroke="#ecf0f1" />
+      <Line endX="41.0" layoutX="229.0" layoutY="432.0" opacity="0.23" startX="-10.5" stroke="#ecf0f1" />
+      <AnchorPane layoutX="48.0" layoutY="140.0" prefHeight="298.0" prefWidth="237.0" style="-fx-background-color: #29293d;">
+         <children>
+            <Button layoutX="52.0" layoutY="201.0" mnemonicParsing="false" onAction="#btnStartedOnAction" prefHeight="33.0" prefWidth="154.0" style="-fx-background-color: black; -fx-border-color: #3d87b4;" text="Get  Started" textFill="#ddc5c5" />
+            <JFXTextField fx:id="txtUserName" focusColor="#433e3e" layoutX="49.0" layoutY="105.0" onKeyTyped="#txtUserNameKeyTypedOnAction" prefHeight="32.0" prefWidth="173.0" promptText="User Name" style="-fx-background-color: #b1b3b4;" unFocusColor="#787379" />
+            <Label fx:id="lblError" layoutX="36.0" layoutY="144.0" prefHeight="39.0" prefWidth="193.0" textFill="#cd1a1a" />
+            <Label ellipsisString="" layoutX="20.0" layoutY="14.0" prefHeight="32.0" prefWidth="161.0" text="Let's  Chat " textAlignment="CENTER" wrapText="true">
+               <font>
+                  <Font name="Wingdings 2" size="26.0" />
+               </font>
+               <textFill>
+                  <LinearGradient endX="0.03398058252427184" endY="0.1941747572815534" startY="0.1262135922330097">
+                     <stops>
+                        <Stop color="#101405" />
+                        <Stop color="#e8d0d0" offset="1.0" />
+                     </stops>
+                  </LinearGradient>
+               </textFill>
+            </Label>
+            <Label layoutX="58.0" layoutY="53.0" text="bring to good solution" textFill="#e8e2e2">
+               <font>
+                  <Font name="YouYuan" size="15.0" />
+               </font>
+            </Label>
+            <ImageView fitHeight="32.0" fitWidth="34.0" layoutX="11.0" layoutY="106.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../assets/user.png" />
+               </image>
+            </ImageView>
+         </children>
+      </AnchorPane>
+      <Circle fill="TRANSPARENT" layoutX="328.0" layoutY="38.0" opacity="0.23" radius="18.0" stroke="#ecf0f1" strokeLineCap="ROUND" strokeLineJoin="ROUND" strokeType="OUTSIDE" strokeWidth="5.0" />
+      <Circle fill="TRANSPARENT" layoutX="14.0" layoutY="502.0" opacity="0.23" radius="56.0" stroke="#ecf0f1" strokeLineCap="ROUND" strokeLineJoin="ROUND" strokeType="OUTSIDE" strokeWidth="5.0" />
+      <ImageView fitHeight="73.0" fitWidth="108.0" layoutX="110.0" layoutY="25.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../assets/cicon-removebg-preview.png" />
+         </image>
+      </ImageView>
+   </children>
+</AnchorPane>
