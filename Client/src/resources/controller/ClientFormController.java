@@ -1,5 +1,6 @@
 package resources.controller;
 
+import animatefx.animation.FadeIn;
 import javafx.application.Platform;
 import javafx.beans.value.ChangeListener;
 import javafx.beans.value.ObservableValue;
@@ -46,8 +47,10 @@ public class ClientFormController implements Initializable {
     public FlowPane flowPane;
     public ImageView imgMenu;
     public Circle showProPic;
+    public AnchorPane profilePane;
     private Client client;
     PrintWriter printWriter;
+    public boolean toggleChat = false, toggleProfile = false;
     int[] emojis = {0x1F606, 0x1F601, 0x1F602, 0x1F609, 0x1F618, 0x1F610, 0x1F914, 0x1F642, 0x1F635, 0x1F696, 0x1F636, 0x1F980, 0x1F625, 0x1F634, 0x1F641,0x1F643,};
 
     public void sendOnAction(ActionEvent actionEvent) {
@@ -145,7 +148,31 @@ public class ClientFormController implements Initializable {
 
     public void openImageChooser(MouseEvent mouseEvent) throws IOException {
 
+        Stage stage = (Stage) ((Node) mouseEvent.getSource()).getScene().getWindow();
         FileChooser fileChooser = new FileChooser();
+        fileChooser.setTitle("Choose a Image");
+        File file = fileChooser.showOpenDialog(stage);
+        if (file != null) {
+//            printWriter.println(userName + ": " + file.toURI().toURL());
+        }
+        if (file != null) {
+            System.out.println("File Was Selected");
+            URL url = file.toURI().toURL();
+            System.out.println(url);
+            HBox hBox = new HBox();
+            hBox.setAlignment(Pos.CENTER_RIGHT);
+            hBox.setPadding(new Insets(5, 10, 5, 5));
+            ImageView imageView = new ImageView();
+            Image image = new Image(String.valueOf(url));
+            imageView.setImage(image);
+            imageView.setFitWidth(75);
+            imageView.setFitHeight(75);
+            VBox vBox = new VBox(imageView);
+            vBox.setAlignment(Pos.CENTER_RIGHT);
+            vBox.setPadding(new Insets(5, 10, 5, 5));
+            vb_main.getChildren().add(vBox);
+        }
+      /*  FileChooser fileChooser = new FileChooser();
 //        fileChooser.getExtensionFilters().addAll(new FileChooser.ExtensionFilter("Image","*.jpg;*.png;*.jpeg;*.gif;"));
         fileChooser.setTitle("Select image to send.");
         File file = fileChooser.showOpenDialog(new Stage());
@@ -161,7 +188,7 @@ public class ClientFormController implements Initializable {
 
         ImageIO.write(bufferedImage,extension,bos);
         byte[] data = bos.toByteArray();
-        client.clientSendImage(data,extension,file.getName());
+        client.clientSendImage(data,extension,file.getName());*/
 
     }
 
@@ -194,6 +221,8 @@ public class ClientFormController implements Initializable {
 
 
 
-    public void imgMenuOnAction(MouseEvent mouseEvent) {
+
+    public void openprofileChooser(MouseEvent mouseEvent) {
+
     }
 }
