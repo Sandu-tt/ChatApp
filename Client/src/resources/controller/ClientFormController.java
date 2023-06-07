@@ -1,6 +1,6 @@
 package resources.controller;
 
-import animatefx.animation.FadeIn;
+
 import javafx.application.Platform;
 import javafx.beans.value.ChangeListener;
 import javafx.beans.value.ObservableValue;

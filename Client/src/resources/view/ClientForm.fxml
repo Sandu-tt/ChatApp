@@ -13,9 +13,10 @@
 <?import javafx.scene.layout.RowConstraints?>
 <?import javafx.scene.layout.VBox?>
 <?import javafx.scene.shape.Circle?>
+<?import javafx.scene.shape.Rectangle?>
 <?import javafx.scene.text.Font?>
 
-<AnchorPane fx:id="clientContext" prefHeight="400.0" prefWidth="600.0" styleClass="pane01" stylesheets="@../css/client.css" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="resources.controller.ClientFormController">
+<AnchorPane fx:id="clientContext" prefHeight="421.0" prefWidth="586.0" styleClass="pane01" stylesheets="@../css/client.css" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="resources.controller.ClientFormController">
    <children>
       <Label fx:id="usernameLabel" layoutX="88.0" layoutY="13.0" prefHeight="30.0" prefWidth="170.0" text="User Name" textFill="#0f6cdd">
          <font>
@@ -80,5 +81,12 @@
             <Image url="@../assets/img.png" />
          </image>
       </ImageView>
+      <Circle fill="TRANSPARENT" layoutX="28.0" layoutY="261.0" opacity="0.23" radius="8.0" stroke="#ecf0f1" strokeLineCap="ROUND" strokeLineJoin="ROUND" strokeType="OUTSIDE" strokeWidth="5.0" />
+      <Circle fill="TRANSPARENT" layoutX="586.0" layoutY="168.0" opacity="0.23" radius="6.0" stroke="#ecf0f1" strokeLineCap="ROUND" strokeLineJoin="ROUND" strokeType="OUTSIDE" strokeWidth="5.0" />
+      <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#1f93ff00" height="82.0" layoutX="566.0" layoutY="251.0" opacity="0.23" stroke="#ecf0f1" strokeType="INSIDE" strokeWidth="3.0" width="32.0" />
+      <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#1f93ff00" height="82.0" layoutX="542.0" layoutY="260.0" opacity="0.23" stroke="#ecf0f1" strokeType="INSIDE" strokeWidth="3.0" width="67.0" />
+      <Circle fill="TRANSPARENT" layoutX="-25.0" layoutY="162.0" opacity="0.23" radius="46.0" stroke="#ecf0f1" strokeLineCap="ROUND" strokeLineJoin="ROUND" strokeType="OUTSIDE" strokeWidth="5.0" />
+      <Circle fill="TRANSPARENT" layoutX="597.0" layoutY="162.0" opacity="0.23" radius="20.0" stroke="#ecf0f1" strokeLineCap="ROUND" strokeLineJoin="ROUND" strokeType="OUTSIDE" strokeWidth="5.0" />
+      <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#1f93ff00" height="89.0" layoutX="-16.0" layoutY="267.0" opacity="0.23" stroke="#ecf0f1" strokeType="INSIDE" strokeWidth="3.0" width="32.0" />
    </children>
 </AnchorPane>
