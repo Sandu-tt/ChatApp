@@ -4,6 +4,7 @@ import com.jfoenix.controls.JFXTextField;
 import javafx.event.ActionEvent;
 import javafx.fxml.FXML;
 import javafx.fxml.FXMLLoader;
+import javafx.scene.Parent;
 import javafx.scene.Scene;
 import javafx.scene.control.Alert;
 import javafx.scene.control.Label;
@@ -45,6 +46,11 @@ public class LoginFormController {
             ClientFormController.username = txtUserName.getText();
             Stage stage1 = new Stage();
             try {
+                /*Parent parent=FXMLLoader.load(getClass().getResource("../view/ClientForm.fxml"));
+                loginWindow.getChildren().clear();
+                loginWindow.getChildren().add(parent);*/
+
+                stage1.close();
                 stage1.setScene(new Scene(FXMLLoader.load(getClass().getResource("/resources/view/ClientForm.fxml"))));
                 stage1.show();
                 stage1.setMaximized(false);

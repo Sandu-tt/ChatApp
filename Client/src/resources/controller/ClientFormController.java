@@ -114,6 +114,12 @@ public class ClientFormController implements Initializable {
         messageLbl.setStyle("-fx-background-color:  #27ae60;-fx-background-radius:15;-fx-font-size: 18;-fx-font-weight: normal;-fx-text-fill: white;-fx-wrap-text: true;-fx-alignment: center-left;-fx-content-display: left;-fx-padding: 10;-fx-max-width: 350;");
         hBox.getChildren().add(messageLbl);
         vb_main.getChildren().add(hBox);
+
+
+        if (message.equalsIgnoreCase("Bye") || (message.equalsIgnoreCase("logout"))) {
+            System.exit(0);
+
+        }
     }
 
     public void emojiOnClick(MouseEvent mouseEvent) {

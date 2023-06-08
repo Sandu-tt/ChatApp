@@ -47,10 +47,11 @@ public class ClientHandler  implements  Runnable{
         System.out.println("Sending Message : "+sendIngMessage);
         try {
             for (ClientHandler clientHandler : clientHandlers){
-                if (!clientHandler.userName.equals(userName));
-                clientHandler.bufferedWriter.write(sendIngMessage);
-                clientHandler.bufferedWriter.newLine();
-                clientHandler.bufferedWriter.flush();
+                if (!clientHandler.userName.equals(userName)) {
+                    clientHandler.bufferedWriter.write(sendIngMessage);
+                    clientHandler.bufferedWriter.newLine();
+                    clientHandler.bufferedWriter.flush();
+                }
             }
         } catch (IOException e) {
             closeEverything(socket, bufferedReader, bufferedWriter);
