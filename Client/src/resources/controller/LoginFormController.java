@@ -46,15 +46,15 @@ public class LoginFormController {
             ClientFormController.username = txtUserName.getText();
             Stage stage1 = new Stage();
             try {
-                /*Parent parent=FXMLLoader.load(getClass().getResource("../view/ClientForm.fxml"));
+                Parent parent=FXMLLoader.load(getClass().getResource("../view/ClientForm.fxml"));
                 loginWindow.getChildren().clear();
-                loginWindow.getChildren().add(parent);*/
-
-                stage1.close();
-                stage1.setScene(new Scene(FXMLLoader.load(getClass().getResource("/resources/view/ClientForm.fxml"))));
-                stage1.show();
-                stage1.setMaximized(false);
-                stage1.setResizable(false);
+                loginWindow.getChildren().add(parent);
+//
+//                stage1.close();
+//                stage1.setScene(new Scene(FXMLLoader.load(getClass().getResource("/resources/view/ClientForm.fxml"))));
+//                stage1.show();
+//                stage1.setMaximized(false);
+//                stage1.setResizable(false);
 
             } catch (IOException e) {
                 System.out.println(e.getLocalizedMessage());

@@ -13,23 +13,23 @@
 <?import javafx.scene.shape.Rectangle?>
 <?import javafx.scene.text.Font?>
 
-<AnchorPane fx:id="loginWindow" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="560.0" prefWidth="330.0" styleClass="pane01" stylesheets="@../css/login.css" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="resources.controller.LoginFormController">
+<AnchorPane fx:id="loginWindow" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="560.0" prefWidth="711.0" styleClass="pane01" stylesheets="@../css/login.css" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="resources.controller.LoginFormController">
    <children>
-      <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#1f93ff00" height="129.0" layoutX="210.0" layoutY="363.0" opacity="0.23" stroke="#ecf0f1" strokeType="INSIDE" strokeWidth="3.0" width="108.0" />
-      <Line endX="22.5" layoutX="219.0" layoutY="403.0" opacity="0.23" startX="-10.5" stroke="#ecf0f1" />
-      <Line endX="41.0" layoutX="219.0" layoutY="413.0" opacity="0.23" startX="-10.5" stroke="#ecf0f1" />
-      <Line endX="41.0" layoutX="219.0" layoutY="422.0" opacity="0.23" startX="-10.5" stroke="#ecf0f1" />
-      <Line endX="41.0" layoutX="272.0" layoutY="459.0" opacity="0.23" startX="-10.5" stroke="#ecf0f1" />
-      <Line endX="41.0" layoutX="271.0" layoutY="469.0" opacity="0.23" startX="7.0" stroke="#ecf0f1" />
-      <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#1f93ff00" height="129.0" layoutX="220.0" layoutY="373.0" opacity="0.23" stroke="#ecf0f1" strokeType="INSIDE" strokeWidth="3.0" width="108.0" />
-      <Line endX="22.5" layoutX="229.0" layoutY="413.0" opacity="0.23" startX="-10.5" stroke="#ecf0f1" />
-      <Line endX="41.0" layoutX="229.0" layoutY="423.0" opacity="0.23" startX="-10.5" stroke="#ecf0f1" />
-      <Line endX="41.0" layoutX="229.0" layoutY="432.0" opacity="0.23" startX="-10.5" stroke="#ecf0f1" />
-      <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#1f93ff00" height="129.0" layoutX="11.0" layoutY="87.0" opacity="0.23" stroke="#ecf0f1" strokeType="INSIDE" strokeWidth="3.0" width="108.0" />
-      <Line endX="22.5" layoutX="229.0" layoutY="413.0" opacity="0.23" startX="-10.5" stroke="#ecf0f1" />
-      <Line endX="41.0" layoutX="229.0" layoutY="423.0" opacity="0.23" startX="-10.5" stroke="#ecf0f1" />
-      <Line endX="41.0" layoutX="229.0" layoutY="432.0" opacity="0.23" startX="-10.5" stroke="#ecf0f1" />
-      <AnchorPane layoutX="48.0" layoutY="140.0" prefHeight="298.0" prefWidth="237.0" style="-fx-background-color: #29293d;">
+      <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#1f93ff00" height="129.0" layoutX="556.0" layoutY="373.0" opacity="0.23" stroke="#ecf0f1" strokeType="INSIDE" strokeWidth="3.0" width="108.0" />
+      <Line endX="22.5" layoutX="565.0" layoutY="413.0" opacity="0.23" startX="-10.5" stroke="#ecf0f1" />
+      <Line endX="41.0" layoutX="565.0" layoutY="423.0" opacity="0.23" startX="-10.5" stroke="#ecf0f1" />
+      <Line endX="41.0" layoutX="565.0" layoutY="432.0" opacity="0.23" startX="-10.5" stroke="#ecf0f1" />
+      <Line endX="41.0" layoutX="618.0" layoutY="469.0" opacity="0.23" startX="-10.5" stroke="#ecf0f1" />
+      <Line endX="41.0" layoutX="617.0" layoutY="479.0" opacity="0.23" startX="7.0" stroke="#ecf0f1" />
+      <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#1f93ff00" height="129.0" layoutX="566.0" layoutY="383.0" opacity="0.23" stroke="#ecf0f1" strokeType="INSIDE" strokeWidth="3.0" width="108.0" />
+      <Line endX="22.5" layoutX="575.0" layoutY="423.0" opacity="0.23" startX="-10.5" stroke="#ecf0f1" />
+      <Line endX="41.0" layoutX="575.0" layoutY="433.0" opacity="0.23" startX="-10.5" stroke="#ecf0f1" />
+      <Line endX="41.0" layoutX="575.0" layoutY="442.0" opacity="0.23" startX="-10.5" stroke="#ecf0f1" />
+      <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#1f93ff00" height="103.0" layoutX="577.0" layoutY="133.0" opacity="0.23" stroke="#ecf0f1" strokeType="INSIDE" strokeWidth="3.0" width="96.0" />
+      <Line endX="22.5" layoutX="575.0" layoutY="423.0" opacity="0.23" startX="-10.5" stroke="#ecf0f1" />
+      <Line endX="41.0" layoutX="575.0" layoutY="433.0" opacity="0.23" startX="-10.5" stroke="#ecf0f1" />
+      <Line endX="41.0" layoutX="575.0" layoutY="442.0" opacity="0.23" startX="-10.5" stroke="#ecf0f1" />
+      <AnchorPane layoutX="394.0" layoutY="150.0" prefHeight="298.0" prefWidth="237.0" style="-fx-background-color: #29293d;">
          <children>
             <Button layoutX="52.0" layoutY="201.0" mnemonicParsing="false" onAction="#btnStartedOnAction" prefHeight="33.0" prefWidth="154.0" style="-fx-background-color: black; -fx-border-color: #3d87b4;" text="Get  Started" textFill="#ddc5c5" />
             <JFXTextField fx:id="txtUserName" focusColor="#433e3e" layoutX="49.0" layoutY="105.0" onKeyTyped="#txtUserNameKeyTypedOnAction" prefHeight="32.0" prefWidth="173.0" promptText="User Name" style="-fx-background-color: #b1b3b4;" unFocusColor="#787379" />
@@ -59,12 +59,41 @@
             </ImageView>
          </children>
       </AnchorPane>
-      <Circle fill="TRANSPARENT" layoutX="328.0" layoutY="38.0" opacity="0.23" radius="18.0" stroke="#ecf0f1" strokeLineCap="ROUND" strokeLineJoin="ROUND" strokeType="OUTSIDE" strokeWidth="5.0" />
-      <Circle fill="TRANSPARENT" layoutX="14.0" layoutY="502.0" opacity="0.23" radius="56.0" stroke="#ecf0f1" strokeLineCap="ROUND" strokeLineJoin="ROUND" strokeType="OUTSIDE" strokeWidth="5.0" />
-      <ImageView fitHeight="73.0" fitWidth="108.0" layoutX="110.0" layoutY="25.0" pickOnBounds="true" preserveRatio="true">
+      <Circle fill="TRANSPARENT" layoutX="674.0" layoutY="48.0" opacity="0.23" radius="18.0" stroke="#ecf0f1" strokeLineCap="ROUND" strokeLineJoin="ROUND" strokeType="OUTSIDE" strokeWidth="5.0" />
+      <Circle fill="TRANSPARENT" layoutX="360.0" layoutY="512.0" opacity="0.23" radius="56.0" stroke="#ecf0f1" strokeLineCap="ROUND" strokeLineJoin="ROUND" strokeType="OUTSIDE" strokeWidth="5.0" />
+      <ImageView fitHeight="73.0" fitWidth="108.0" layoutX="456.0" layoutY="35.0" pickOnBounds="true" preserveRatio="true">
          <image>
             <Image url="@../assets/cicon-removebg-preview.png" />
          </image>
       </ImageView>
+      <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#1f93ff00" height="111.0" layoutX="337.0" layoutY="125.0" opacity="0.23" stroke="#ecf0f1" strokeType="INSIDE" strokeWidth="3.0" width="53.0" />
+      <AnchorPane prefHeight="560.0" prefWidth="348.0" style="-fx-background-color: white;">
+         <children>
+            <ImageView fitHeight="138.0" fitWidth="165.0" layoutX="92.0" layoutY="209.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../assets/cjpg-removebg-preview.png" />
+               </image>
+            </ImageView>
+            <AnchorPane layoutX="21.0" layoutY="379.0" opacity="0.27" prefHeight="73.0" prefWidth="292.0" style="-fx-background-color: black; -fx-background-radius: 10;">
+               <children>
+                  <Label layoutX="34.0" layoutY="31.0" prefHeight="11.0" prefWidth="225.0" text="PLAYTECH PVT LIMITED  MANAGE EMPLOYYEE" textFill="WHITE">
+                     <font>
+                        <Font name="Arial" size="10.0" />
+                     </font>
+                  </Label>
+               </children>
+            </AnchorPane>
+            <Label layoutX="29.0" layoutY="54.0" text="PT PVT LTD. ">
+               <font>
+                  <Font name="Trebuchet MS Bold" size="45.0" />
+               </font>
+            </Label>
+            <Label layoutX="91.0" layoutY="117.0" text="Best In The West">
+               <font>
+                  <Font name="Trebuchet MS" size="20.0" />
+               </font>
+            </Label>
+         </children>
+      </AnchorPane>
    </children>
 </AnchorPane>
